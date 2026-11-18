@@ -35,7 +35,7 @@ jobs:
       check: 'cargo test --locked'
       build: 'cargo build --release --locked --bin diskus'
       artifact: target/release/diskus
-      smoke: 'diskus --version | grep -F ''zach fork'''
+      smoke: '"$BIN" --version | grep -F ''zach fork'''
       targets: >-
         [{"target":"darwin-arm64","os":"macos-latest"},
          {"target":"linux-x64","os":"ubuntu-22.04"}]

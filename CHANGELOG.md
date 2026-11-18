@@ -1,3 +1,7 @@
+# Fork changes
+
+- Include `zach fork` in `diskus --version` output.
+
 # v0.9.0
 
 

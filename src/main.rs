@@ -45,7 +45,7 @@ fn print_result(result: &DiskUsageResult, size_format: FormatSizeOptions, verbos
 
 fn main() {
     let cmd = Command::new(env!("CARGO_PKG_NAME"))
-        .version(env!("CARGO_PKG_VERSION"))
+        .version(concat!(env!("CARGO_PKG_VERSION"), " (zach fork)"))
         .about("Compute disk usage for the given filesystem entries")
         .arg(
             Arg::new("path")
